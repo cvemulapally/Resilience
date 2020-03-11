@@ -16,7 +16,7 @@ public class SampleService {
     @Autowired
     private RestTemplate restTemplate;
 
-    @CircuitBreaker(name = "serviceA", fallbackMethod = "fallBack")
+    @CircuitBreaker(name = "serviceA")
     public String test(){
 
         String response = null;
